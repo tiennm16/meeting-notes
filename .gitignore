@@ -1,0 +1,96 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# ── Mobile (React Native / Expo) ─────────────────────────────────────────────
+
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Generated native folders (Expo prebuild)
+mobile/android/
+mobile/ios/
+
+# Native build artifacts
+.kotlin/
+*.orig.*
+
+# Signing & certificates
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Firebase / Google services (contain secrets)
+google-services.json
+GoogleService-Info.plist
+
+# Android SDK local config
+local.properties
+
+# Metro
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# TypeScript
+*.tsbuildinfo
+
+# ── Python Backend ────────────────────────────────────────────────────────────
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Byte-compiled / optimised
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+build/
+sdist/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Mypy / Pyright
+.mypy_cache/
+.pyright/
+
+# Service account keys (contain secrets)
+firebase-service-account.json
+*-service-account.json
+service_account*.json
+
+# ── Shared ────────────────────────────────────────────────────────────────────
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# macOS
+.DS_Store
+.DS_Store?
+*.pem
+
+# Editor
+.vscode/settings.json
+.idea/
