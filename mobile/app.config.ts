@@ -67,6 +67,7 @@ const config: ExpoConfig = {
     [
       "expo-audio",
       {
+        enableBackgroundRecording: true,
         microphonePermission:
           "We record your meeting audio so we can transcribe and summarize it.",
       },

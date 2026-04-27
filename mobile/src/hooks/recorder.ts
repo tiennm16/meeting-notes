@@ -27,7 +27,7 @@ const RECORDING_OPTIONS: RecordingOptions = {
   ...RecordingPresets.HIGH_QUALITY,
   android: {
     ...RecordingPresets.HIGH_QUALITY.android,
-    audioSource: "voice_recognition",
+    audioSource: "mic",
   },
 };
 
@@ -59,7 +59,6 @@ export function useRecorder() {
         allowsRecording: true,
         shouldPlayInBackground: false,
         allowsBackgroundRecording: true,
-        interruptionMode: "doNotMix",
         shouldRouteThroughEarpiece: false,
       });
 
